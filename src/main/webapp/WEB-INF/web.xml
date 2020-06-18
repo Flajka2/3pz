@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems,
+Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/j2ee/dtds/web-app_2_3.dtd">
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>
+            training.web.application.servlets.LoginServlet
+        </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EnterServlet</servlet-name>
+        <servlet-class>
+            training.web.application.servlets.EnterServlet
+        </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EnterServlet</servlet-name>
+        <url-pattern>/enter</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EnterAdminServlet</servlet-name>
+        <servlet-class>
+            training.web.application.servlets.EnterAdminServlet
+        </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EnterAdminServlet</servlet-name>
+        <url-pattern>/enterAdmin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>
+            training.web.application.servlets.LogoutServlet
+        </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateUserServlet</servlet-name>
+        <servlet-class>
+            training.web.application.servlets.CreateUserServlet
+        </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateUserServlet</servlet-name>
+        <url-pattern>/createUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AfterCreateServlet</servlet-name>
+        <servlet-class>
+            training.web.application.servlets.AfterCreateServlet
+        </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AfterCreateServlet</servlet-name>
+        <url-pattern>/afterCreate</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SetUserAccessServlet</servlet-name>
+        <servlet-class>
+            training.web.application.servlets.SetUserAccessServlet
+        </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SetUserAccessServlet</servlet-name>
+        <url-pattern>/blockUser</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteUserServlet</servlet-name>
+        <servlet-class>
+            training.web.application.servlets.SetUserAccessServlet
+        </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteUserServlet</servlet-name>
+        <url-pattern>/deleteUser</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>ValidateRegistrationFilter</filter-name>
+        <filter-class>
+            training.web.application.filters.ValidateRegistrationFilter
+        </filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ValidateRegistrationFilter</filter-name>
+        <url-pattern>/createUser</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>SearchMatchFilter</filter-name>
+        <filter-class>
+            training.web.application.filters.SearchMatchFilter
+        </filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SearchMatchFilter</filter-name>
+        <url-pattern>/createUser</url-pattern>
+    </filter-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>

@@ -1,0 +1,275 @@
+/* basic rules */
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #2b3a42;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+/*first screen*/
+.header {
+    background: #F0F0DF;
+    color: #2B3A42;
+    padding-top: 20px;
+    padding-bottom: 200px;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.menu {
+    padding-top: 34px;
+}
+
+.menu__item {
+    margin: 0 37px;
+}
+
+.menu__item a {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2B3A42;
+}
+
+.login {
+    text-align: center;
+    padding-top: 34px;
+}
+
+.login a {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2B3A42;
+}
+
+.login a:hover {
+    text-decoration: none;
+    color: #d87f58;
+}
+
+.login a:focus {
+    text-decoration: none;
+    color: #e76703;
+}
+
+.menu__item a:hover {
+    text-decoration: none;
+    color: #d87f58;
+}
+
+.menu__item a:focus {
+    text-decoration: none;
+    color: #e76703;
+}
+
+.main {
+    margin-top: 100px;
+}
+
+.main__title }{
+    font-size: 32px;
+}
+
+.main__intro {
+    font-size: 20px;
+    line-height: 1.5em;
+    width: 400px;
+}
+
+.main__text {
+    font-size: 16px;
+    line-height: 1.3em;
+    width: 400px;
+    margin-top: 10px;
+}
+
+.community {
+    width: 550px;
+    display: block;
+    margin: 100px auto 0;
+}
+
+/*second screen*/
+.topic {
+    background: #534884;
+}
+
+.topic__title__main {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 40px;
+    color: #ddddc9;
+}
+
+.topic__item {
+    margin-bottom: 50px;
+}
+
+.topic__item__icon {
+    font-size: 80px;
+    text-align: center;
+}
+
+.topic__item__icon a {
+    color: #ff7000;
+    transition: all 0.5s ease;
+}
+
+.topic__item__icon a:hover {
+    text-decoration: none;
+    color: #332c50;
+}
+
+.topic__item__block {
+    text-align: center;
+}
+
+.topic__item__title {
+    font-weight: 400;
+    color: #ddddc9;
+}
+
+/* Footer */
+.footer {
+    padding: 60px 0;
+}
+
+#footer {
+    background: #332c50 !important;
+}
+#footer h5{
+    padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ddddc9;
+}
+#footer a {
+    color: #ddddc9;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+    padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+    font-size:25px;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+    font-size:30px;
+    margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+    color:#ddddc9;
+}
+#footer ul.social li a:hover{
+    color:#eeeeee;
+}
+#footer ul.quick-links li{
+    padding: 3px 0;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+    padding: 3px 0;
+    margin-left:5px;
+    font-weight:700;
+}
+#footer ul.quick-links li a i{
+    margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: #ccc;
+}
+
+.tg td {
+    font-size: 14px;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: #ccc;
+    color: #333;
+    background-color: #fff;
+}
+
+.tg th {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: #ccc;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+@media screen and (max-width:767px){
+    #footer h5 {
+        padding-left: 0;
+        border-left: transparent;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:1023px){
+    .main {
+        text-align: center;
+    }
+    .main__intro {
+        width: auto;
+    }
+    .main__text {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:991px){
+    .community {
+        width: 100%;
+        display: block;
+        margin: 50px auto 0;
+    }
+}
+
+@media screen and (max-width:424px){
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu__item {
+        margin-bottom: 10px;
+    }
+}

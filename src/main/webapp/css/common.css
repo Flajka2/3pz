@@ -1,0 +1,75 @@
+body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #F0F0DF;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+    font-weight: normal;
+}
+
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin button {
+    margin-top: 10px;
+    background: #e76703;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    border: 0;
+    cursor: pointer;
+    color: #000;
+}
+
+.form-signin button:hover {
+    background: #ff7000;
+    font-weight: 600;
+    font-family: 'Fira Sans', sans-serif;
+    color: #000;
+}
+
+.refer a {
+     font-size: 22px;
+     font-weight: 600;
+     color: #332c50;
+ }
+
+.refer a:hover {
+    text-decoration: none;
+    color: #534884;
+}
+
+.refer a:focus {
+    text-decoration: none;
+    color: #ff7000;
+}
